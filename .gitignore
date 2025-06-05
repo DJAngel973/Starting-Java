@@ -2,6 +2,21 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.idea/
+*.iml
+
+### Archivos de compilacion comunes ###
+*.class
+*.jar
+*.war
+*.ear
+
+### Archivos de log ###
+*.log
+
+# Dependencias descargadas (si no estás usando `.m2` como caché global)
+target/
+build/
 
 ### Eclipse ###
 .apt_generated
@@ -27,3 +42,10 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Archivos temporales
+*.swp
+*~
+
+# Variables de entorno
+.env
