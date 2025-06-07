@@ -7,8 +7,8 @@ public class Conditional {
          * if(Condicion){
          *    Instrucciones
          * }
-         * else if{
-         *
+         * else if(Condicion){
+         *    Instrucciones
          * }
          * else{
          *    Instrucciones
