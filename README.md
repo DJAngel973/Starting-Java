@@ -26,8 +26,7 @@ Estoy en ejecucion semanal de acuerdo como se esta avanzando.
 ## Sobre mí
 
 Hola, mi nombre es Juan David.  
-Soy un ingeniería de Software apasionado por la nuevas tecnologias  y el desarrollo seguro, me especializo en base de datos y optimización de estructuras para garantizar eficiencia y seguridad en los proyectos que desarrollo.
-
+Soy un ingenierp de Software apasionado por la nuevas tecnologias y el desarrollo seguro, me especializo en base de datos y optimización de estructuras para garantizar eficiencia y seguridad en los proyectos que desarrollo.
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white)
