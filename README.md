@@ -1,5 +1,5 @@
-# Comienzo con Java ![Taza de Java](src/resources/images/taza_de_java.png)
-
+# Comienzo con Java 
+![Java Logo](https://www.oracle.com/a/tech/img/cb88-java-logo-001.jpg)
 
 Este repositorio contiene una serie de ejercicios prácticos realizados para aprender los fundamentos del lenguaje en Java. Está organizado por pasos explicados, y ejercicios planteadas por [DevSenior](https://devseniorcode.com/) en el modulo 1, de Java Senior con IA.
 
@@ -27,3 +27,9 @@ Estoy en ejecucion semanal de acuerdo como se esta avanzando.
 
 Hola, mi nombre es Juan David.  
 Soy un ingeniería de Software apasionado por la nuevas tecnologias  y el desarrollo seguro, me especializo en base de datos y optimización de estructuras para garantizar eficiencia y seguridad en los proyectos que desarrollo.
+
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white)
+![Linux](https://img.shields.io/badge/OS-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![VS Code](https://img.shields.io/badge/Editor-VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
