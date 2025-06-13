@@ -33,7 +33,7 @@ public class FirstExercise {
         double totalCount = percentageCount + count;
 
         JOptionPane.showMessageDialog(null, "Valor propina: " + "$" + percentageCount);
-        JOptionPane.showMessageDialog(null, "Total a pagar: " + "$" + totalCount);
+        JOptionPane.showMessageDialog(null, "Total a pagar: " + "$" + String.format("%.2f", totalCount));
 
     }
 }
