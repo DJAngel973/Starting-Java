@@ -1,4 +1,47 @@
 package ExcercisesSecondClass;
 
+import javax.swing.*;
+import java.util.Scanner;
+
+/*
+* Calcular la propina del restaurante.
+* Solicita por consola (Scanner) el monto total de la cuenta y el porcentaje de propina que desea dejar el cliente (15, 18 o 20).
+* Mostrar el resultado final con un JOptionPane.ShowMessageDialog indicando:
+* -Valor propina.
+* -Total a pagar(cuenta + propina).
+* Requisitos:
+* Utilizar operadores aritméticos y de asignación.
+* Aplicar el porcentaje usando *=0.01.
+* No utilizar condicionales ni ciclos.
+* */
 public class FirstExercise {
+    public static void main(String[] args) {
+
+        Scanner entry = new Scanner(System.in);
+
+        System.out.println("Calculemos el valor a pagar en un restaurante con propina.");
+        System.out.println("Porcentaje propina de 15, 18 o 20");
+
+        System.out.print("Ingresa valor total de la cuenta: ");
+        double count = entry.nextDouble();
+        System.out.print("Ingresa valor del porcenaje: ");
+        double baksheesh = entry.nextDouble();
+
+        baksheesh /= 100;
+        double percentageCount = count * baksheesh;
+        double totalCount = percentageCount + count;
+
+        JOptionPane.showMessageDialog(null, "Valor propina: " + "$" + percentageCount);
+        JOptionPane.showMessageDialog(null, "Total a pagar: " + "$" + totalCount);
+
+    }
 }
+
+/*
+= → Asignación (a = 5)
++= → Suma y asignación (a += 3 es equivalente: a = a + 3)
+-= → Resta y asignación (a -= 2 es equivalente: a = a - 2)
+*= → Multiplicación y asignación (a *= 4 es equivalente: a = a * 4)
+/= → División y asignación (a /= 2 es equivalente: a = a / 2)
+%= → Módulo y asignación (a %= 3 es equivalente: a = a % 3)
+* */
