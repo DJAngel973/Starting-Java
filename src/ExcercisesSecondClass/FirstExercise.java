@@ -27,7 +27,8 @@ public class FirstExercise {
         System.out.print("Ingresa valor del porcenaje: ");
         double baksheesh = entry.nextDouble();
 
-        baksheesh /= 100;
+        baksheesh *=0.01;
+        // La multiplicación Se recomienda cuando se trabajan con tasas de convesión o escalas pequeñas y la división cuando se ajustan valores: /= 100
         double percentageCount = count * baksheesh;
         double totalCount = percentageCount + count;
 
