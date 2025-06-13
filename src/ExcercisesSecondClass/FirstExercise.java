@@ -19,18 +19,20 @@ public class FirstExercise {
 
         Scanner entry = new Scanner(System.in);
 
+        double count, baksheesh, percentageCount, totalCount;
+
         System.out.println("Calculemos el valor a pagar en un restaurante con propina.");
         System.out.println("Porcentaje propina de 15, 18 o 20");
 
         System.out.print("Ingresa valor total de la cuenta: ");
-        double count = entry.nextDouble();
+        count = entry.nextDouble();
         System.out.print("Ingresa valor del porcenaje: ");
-        double baksheesh = entry.nextDouble();
+        baksheesh = entry.nextDouble();
 
         baksheesh *=0.01;
         // La multiplicación Se recomienda cuando se trabajan con tasas de convesión o escalas pequeñas y la división cuando se ajustan valores: /= 100
-        double percentageCount = count * baksheesh;
-        double totalCount = percentageCount + count;
+        percentageCount = count * baksheesh;
+        totalCount = percentageCount + count;
 
         JOptionPane.showMessageDialog(null, "Valor propina: " + "$" + percentageCount);
         JOptionPane.showMessageDialog(null, "Total a pagar: " + "$" + String.format("%.2f", totalCount));
