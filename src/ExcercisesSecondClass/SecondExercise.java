@@ -14,7 +14,7 @@ import java.util.Scanner;
 * Aplicar el porcentaje usando *=0.01.
 * No utilizar condicionales ni ciclos.
 * */
-public class FirstExercise {
+public class SecondExercise {
     public static void main(String[] args) {
 
         Scanner entry = new Scanner(System.in);
