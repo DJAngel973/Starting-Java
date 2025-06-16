@@ -21,6 +21,7 @@ public class ThirdExercise {
 
         double grossSalary = Double.parseDouble(JOptionPane.showInputDialog("Ingresa el salario bruto: "));
 
+        //Variables.
         double taxation = grossSalary * 0.10;
         double socialSecurity = grossSalary * 0.05;
         double fundSavings = grossSalary * 0.03;
