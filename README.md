@@ -9,6 +9,7 @@ Este repositorio contiene una serie de ejercicios prácticos realizados para apr
 - [EntryDatas](https://github.com/DJAngel973/Starting-Java/blob/main/src/EntryDatas.java) – Entrada de Datos.
 - [Operators](https://github.com/DJAngel973/Starting-Java/blob/main/src/Operators.java) – Operadores.
 - [VariablesScanner](https://github.com/DJAngel973/Starting-Java/blob/main/src/VariablesScanner.java) – Variables.
+- [ExercisesSecondClass](https://github.com/DJAngel973/Starting-Java/tree/main/src/ExcercisesSecondClass) - Ejercicios segunda clase.
 
 
 ## Objetivo
