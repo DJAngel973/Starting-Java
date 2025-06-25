@@ -82,22 +82,22 @@ public class AnalyzeNumber {
                 El for para iterar con los valores dentro del rango de las variables initialNum y finalNum.
                 */
                 switch (type) {
-                    case "impar":
-                    for (int i = initialNum; i <= finalNum; i++){
-                    
-                        if (i % 2 == 0){ //Mostramos solo impares, salta cuando es par.
-                            continue; //Implementamos continue para que salte el número que no coincide con la condición.
-                        }
-                    System.out.printf("El número %d es impar.\n",i);
-                    }
-                        break;
                     case "par":
                     for (int i = initialNum; i <= finalNum; i++){
                     
-                        if (i % 2 != 0){ //Mostramos solo pares, salta cuando es impar
+                        if (i % 2 == 1){ //Mostramos solo pares, salta cuando es impar.
+                            continue; //Implementamos continue para que salte el número que no coincide con la condición.
+                        }
+                    System.out.printf("El número %d es par.\n",i);
+                    }
+                        break;
+                    case "impar":
+                    for (int i = initialNum; i <= finalNum; i++){
+                    
+                        if (i % 2 != 1){ //Mostramos solo impares, salta cuando es par
                             continue;
                         }
-                        System.out.printf("El número %d es par.\n",i);
+                        System.out.printf("El número %d es impar.\n",i);
                     }
                         break;
                     default:
