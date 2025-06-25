@@ -49,13 +49,9 @@ public class AnalyzeNumber {
                 //Se implementa el operador terniario para determinar si el número es impar o par.
                 System.out.printf("\tEl número %d es %s.\n",firstNumber, (residue != 0) ? "impar" : "par");
                 
-                if (firstNumber > 100){ //Determinamos si es mayor que 100.
-                    System.out.printf("\tEl número %d es mayor que 100.\n",firstNumber);
-                }else if (firstNumber < 100){ //Determinamos si es menor que 100.
-                    System.out.printf("\tEl número %d es menor que 100.\n",firstNumber);
-                }else{ //Determinamos que es igual a 100 ya que no cumple las condiciones anteriores.
-                    System.out.printf("\tEl número %d es igual a 100.\n",firstNumber);
-                }
+                //Determinamos si es mayor, menor o igual que 100.
+                System.out.printf("\tEl número %d es %s que 100.\n",firstNumber, (firstNumber > 100) ? "mayor"
+                                                                                            : (firstNumber < 100) ? "menor": "igual");
                 break;
             }
             case 2:{
