@@ -106,6 +106,7 @@ public class AnalyzeNumber {
             }
                 break;
             case 0:
+                System.out.println("Gracias, vuelve pronto.");
                 break;
             default:
                 break;
