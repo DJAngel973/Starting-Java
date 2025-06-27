@@ -1,33 +1,33 @@
-# Comienzo con Java 
+# Getting Started with Java
 ![Java Logo](https://www.oracle.com/a/tech/img/cb88-java-logo-001.jpg)
 
-Este repositorio contiene una serie de ejercicios prácticos realizados para aprender los fundamentos del lenguaje en Java. Está organizado por pasos explicados, y ejercicios planteadas por [DevSenior](https://devseniorcode.com/) en el modulo 1, de Java Senior con IA.
+This repository contains a series of practical exercises designed to learn the fundamentals of the Java programming language. It's organized by explained steps and exercises provided by [DevSenior](https://devseniorcode.com/) in Module 1 of "Java Senior with AI."
 
-## 📚 Contenido
+## 📚 Contents
 
-- [Conditional](https://github.com/DJAngel973/Starting-Java/blob/main/src/Conditional.java) – Condicionales.
-- [EntryDatas](https://github.com/DJAngel973/Starting-Java/blob/main/src/EntryDatas.java) – Entrada de Datos.
-- [Operators](https://github.com/DJAngel973/Starting-Java/blob/main/src/Operators.java) – Operadores.
-- [VariablesScanner](https://github.com/DJAngel973/Starting-Java/blob/main/src/VariablesScanner.java) – Variables.
-- [ExercisesSecondClass](https://github.com/DJAngel973/Starting-Java/tree/main/src/ExcercisesSecondClass) - Ejercicios segunda clase.
+- [Conditional](https://github.com/DJAngel973/Starting-Java/blob/main/src/Conditional.java)
+- [EntryDatas](https://github.com/DJAngel973/Starting-Java/blob/main/src/EntryDatas.java)
+- [Operators](https://github.com/DJAngel973/Starting-Java/blob/main/src/Operators.java)
+- [VariablesScanner](https://github.com/DJAngel973/Starting-Java/blob/main/src/VariablesScanner.java)
+- [ExercisesSecondClass](https://github.com/DJAngel973/Starting-Java/tree/main/src/ExcercisesSecondClass)
 
 
-## Objetivo
+## Objective
 
-Aprender de forma práctica los conceptos básicos de programación en Java, entendiendo cómo podrían aplicarse a pequeños problemas reales.
+To practically learn the basic concepts of programming in Java and understand how they can be applied to real-world problems.
 
-## Cómo usar este repositorio
+## How to Use This Repository
 
-Puedes clonarlo para interactuar con los ejercicios desde la consola o con interfaz.
+You can clone it to interact with the exercises via the console or a user interface.
 
-## Estado
+## Status
 
-Estoy en ejecucion semanal de acuerdo como se esta avanzando.
+This project is updated weekly. progressing step by step.
 
-## Sobre mí
+## About Me
 
-Hola, mi nombre es Juan David.  
-Soy un ingenierp de Software apasionado por la nuevas tecnologias y el desarrollo seguro, me especializo en base de datos y optimización de estructuras para garantizar eficiencia y seguridad en los proyectos que desarrollo.
+Hi, my name is Juan David.  
+I'm a Software Engineer passionate about new technologies and secure development. I specialize in databases and optimizing project structures to ensure efficiency and security.
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white)
