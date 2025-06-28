@@ -1,0 +1,32 @@
+'Example a diagram
+@startuml
+
+class Publication {
+    -content: String
+    -datePublication: Date
+    -amountILike: int
+    -comments: List<String>
+
+    +like(): void
+    +comment(commentary: String, user: User): void
+    +remove(): void
+}
+
+class Commentary {
+    -user: User
+    -date: Date
+    -content: String
+
+}
+
+class User {
+    -name: String
+    -email: String
+    -publicaciones: List<Publication>
+
+    +addPublication(commentary: Commentary): void
+    +createPublication(content: String): void
+
+}
+
+@enduml
