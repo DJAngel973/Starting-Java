@@ -1,4 +1,4 @@
-package ExcercisesThirdClass;
+package ExercisesThirdClass;
 import java.util.Scanner;
 
 /*Ejercicio autonomo, analizar numeros. -Independent exercise, analyze numbers.

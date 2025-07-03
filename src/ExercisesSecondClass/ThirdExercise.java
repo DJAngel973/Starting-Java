@@ -1,4 +1,4 @@
-package ExcercisesSecondClass;
+package ExercisesSecondClass;
 
 import javax.swing.*;
 

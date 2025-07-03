@@ -5,12 +5,23 @@ This repository contains a series of practical exercises designed to learn the f
 
 ## 📚 Contents
 
+### 📁 Introduction
 - [Conditional](https://github.com/DJAngel973/Starting-Java/blob/main/src/Conditional.java)
 - [EntryDatas](https://github.com/DJAngel973/Starting-Java/blob/main/src/EntryDatas.java)
 - [Operators](https://github.com/DJAngel973/Starting-Java/blob/main/src/Operators.java)
 - [VariablesScanner](https://github.com/DJAngel973/Starting-Java/blob/main/src/VariablesScanner.java)
 - [ExercisesSecondClass](https://github.com/DJAngel973/Starting-Java/tree/main/src/ExcercisesSecondClass)
-
+- [Diagram](https://github.com/DJAngel973/Starting-Java/blob/main/src/Diagram.wsd)
+### file_folder: Exercises Second Class
+- [PurchaseCalculator](https://github.com/DJAngel973/Starting-Java/blob/main/src/ExcercisesSecondClass/PurchaseCalculator.java)
+- [SecondExercise](https://github.com/DJAngel973/Starting-Java/blob/main/src/ExcercisesSecondClass/SecondExercise.java)
+- [ThirdExercise](https://github.com/DJAngel973/Starting-Java/blob/main/src/ExcercisesSecondClass/ThirdExercise.java)
+- [FourthExercise](https://github.com/DJAngel973/Starting-Java/blob/main/src/ExcercisesSecondClass/FourthExercise.java)
+### file_folder: Exercises third Class
+- [AnalyzeNumber](https://github.com/DJAngel973/Starting-Java/blob/main/src/ExcercisesThirdClass/AnalyzeNumber.java)
+- [MenuConsole](https://github.com/DJAngel973/Starting-Java/blob/main/src/ExcercisesThirdClass/MenuConsole.java)
+### 📁 Exercises Fourth Class
+- [ProjectModule1](https://github.com/DJAngel973/Starting-Java/blob/main/src/ExcercisesFourthClass/ProjectModule1.java)
 
 ## Objective
 
