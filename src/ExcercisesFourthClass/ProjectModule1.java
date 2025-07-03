@@ -1,7 +1,5 @@
 package ExcercisesFourthClass;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 /*
@@ -64,12 +62,33 @@ public class ProjectModule1 {
         // Stored the student's name and grades in their respective variables
         System.out.print("Nombre: ");
         name = input.nextLine();
-        System.out.print("Primer nota: ");
-        firstNote = input.nextDouble();
-        System.out.print("Segunda nota: ");
-        secondNote = input.nextDouble();
-        System.out.print("Tercer nota: ");
-        thirdNote = input.nextDouble();
+
+        // Verify firstNote
+        do{
+            System.out.print("Primer nota: ");
+            firstNote = input.nextDouble();
+            if(!verifyNote(firstNote)){
+                System.out.println("Nota invalida, debe estar entre 0 y 100.");
+            }
+        }while(!verifyNote(firstNote));
+
+        // Verify secondNote
+        do{
+            System.out.print("Segunda nota: ");
+            secondNote = input.nextDouble();
+            if(!verifyNote(secondNote)){
+                System.out.println("Nota invalida, debe estar entre 0 y 100.");
+            }
+        }while(!verifyNote(secondNote));
+
+        // Verify thirdNote
+        do {
+            System.out.print("Tercer nota: ");
+            thirdNote = input.nextDouble();
+            if(!verifyNote(thirdNote)){
+                System.out.println("Nota invalida, debe estar entre 0 y 100.");
+            }
+        }while(!verifyNote(thirdNote));
     }
     // Create function to display student information
     public static void studentInformation(){
@@ -90,5 +109,11 @@ public class ProjectModule1 {
         // Operation for average
         averageNote = (firstNote + secondNote + thirdNote) / 3;
         System.out.printf("Promedio de las notas: %.2f\n", averageNote);
+    }
+    // Verify notes entered
+    public static boolean verifyNote(double note){
+
+        // Determine note range
+        return note >= 0 && note <= 100;
     }
 }
