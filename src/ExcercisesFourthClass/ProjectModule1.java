@@ -60,8 +60,13 @@ public class ProjectModule1 {
     public static void registerStudent(Scanner input){
 
         // Stored the student's name and grades in their respective variables
-        System.out.print("Nombre: ");
-        name = input.nextLine();
+        do{
+            System.out.print("Nombre: ");
+            name = input.nextLine();
+            if(!validateName(name)){
+                System.out.println("Ingresa un nombre valido.");
+            }
+        }while(!validateName(name));
 
         // Verify firstNote
         do{
@@ -90,7 +95,7 @@ public class ProjectModule1 {
             }
         }while(!verifyNote(thirdNote));
     }
-    // Create function to display student information
+    // Displays registered student information
     public static void studentInformation(){
 
         // Added an if condition to check if the name variable is empty
@@ -106,7 +111,7 @@ public class ProjectModule1 {
     // Calculate average of the student's grades
     public static void studentAverage(){
 
-        // Operation for average
+        // Calculates the average score from the three grades
         averageNote = (firstNote + secondNote + thirdNote) / 3;
         System.out.printf("Promedio de las notas: %.2f\n", averageNote);
     }
@@ -115,5 +120,13 @@ public class ProjectModule1 {
 
         // Determine note range
         return note >= 0 && note <= 100;
+    }
+    // Validate name entered
+    public static boolean validateName(String name){
+
+        // Valide name: check for null or empty input
+        return name != null && !name.trim().isEmpty();
+        // '!=null' Verify if the variable was not initialized.
+        // '!name.trim().isEmpty()' Eliminate blank spaces before checking if it is empty.
     }
 }
