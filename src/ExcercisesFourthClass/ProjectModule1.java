@@ -9,12 +9,19 @@ import java.util.Scanner;
 * using functions to organize different tasks
 * */
 public class ProjectModule1 {
+
+    public static String name = "";
+    public static double firstNote;
+    public static double secondNote;
+    public static double thirdNote;
+
     public static void main(String[] args) {
 
         var input = new Scanner(System.in);
         int optionMenu;
         boolean exit = false;
 
+        // added do-while loop to manage menu interaction
         do {
             System.out.println(" ---- Sistema Registro de Estudiantes ---- ");
             System.out.print("""
@@ -28,11 +35,13 @@ public class ProjectModule1 {
             optionMenu = input.nextInt();
             input.nextLine();
 
+            // Implemented a switch block to execute each menu option
             switch (optionMenu){
                 case 1:
-                    studentInformation(input);
+                    registerStudent(input);
                     break;
                 case 2:
+                    studentInformation();
                     break;
                 case 3:
                     break;
@@ -48,14 +57,10 @@ public class ProjectModule1 {
             }
         }while(!exit);
     }
-    //
-    public static void studentInformation(Scanner input){
+    // Create student registration function
+    public static void registerStudent(Scanner input){
 
-        String name;
-        double firstNote;
-        double secondNote;
-        double thirdNote;
-
+        // Stored the student's name and grades in their respective variables
         System.out.print("Nombre: ");
         name = input.nextLine();
         System.out.print("Primer nota: ");
@@ -64,5 +69,18 @@ public class ProjectModule1 {
         secondNote = input.nextDouble();
         System.out.print("Tercer nota: ");
         thirdNote = input.nextDouble();
+    }
+    // Create function to display student information
+    public static void studentInformation(){
+
+        // Added an if condition to check if the name variable is empty
+        if (name.isEmpty()) {
+            System.out.println("N/A");
+        }else{
+            System.out.printf("Nombre estudiante: %s", name);
+            System.out.printf("Primer nota: %.2f", firstNote);
+            System.out.printf("Segunda nota: %.2f", secondNote);
+            System.out.printf("Tercer nota: %.2f", thirdNote);
+        }
     }
 }
