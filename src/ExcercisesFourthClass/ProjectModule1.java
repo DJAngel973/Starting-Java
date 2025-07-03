@@ -1,5 +1,7 @@
 package ExcercisesFourthClass;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 /*
@@ -14,6 +16,7 @@ public class ProjectModule1 {
     public static double firstNote;
     public static double secondNote;
     public static double thirdNote;
+    public static double averageNote;
 
     public static void main(String[] args) {
 
@@ -28,7 +31,6 @@ public class ProjectModule1 {
                     1. Registrar estudiante
                     2. Datos estudiante
                     3. Promedio notas del estudiante
-                    4. Validar nota individual
                     0. Salir
                     Escoge una opción:
                     """);
@@ -44,8 +46,7 @@ public class ProjectModule1 {
                     studentInformation();
                     break;
                 case 3:
-                    break;
-                case 4:
+                    studentAverage();
                     break;
                 case 0:
                     exit = true;
@@ -77,10 +78,17 @@ public class ProjectModule1 {
         if (name.isEmpty()) {
             System.out.println("N/A");
         }else{
-            System.out.printf("Nombre estudiante: %s", name);
-            System.out.printf("Primer nota: %.2f", firstNote);
-            System.out.printf("Segunda nota: %.2f", secondNote);
-            System.out.printf("Tercer nota: %.2f", thirdNote);
+            System.out.printf("Nombre estudiante: %s\n", name);
+            System.out.printf("Primer nota: %.2f\n", firstNote);
+            System.out.printf("Segunda nota: %.2f\n", secondNote);
+            System.out.printf("Tercer nota: %.2f\n", thirdNote);
         }
+    }
+    // Calculate average of the student's grades
+    public static void studentAverage(){
+
+        // Operation for average
+        averageNote = (firstNote + secondNote + thirdNote) / 3;
+        System.out.printf("Promedio de las notas: %.2f\n", averageNote);
     }
 }
