@@ -1,5 +1,8 @@
 package ExercisesThirdClass;
 
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 /*
@@ -67,7 +70,7 @@ public class MenuConsole {
                                 area = pi*Math.pow(radio,2);
 
                                 // Print result message
-                                System.out.printf("El área del circulo con radio %.2f es: %.2f\n",radio, area);
+                                System.out.printf("El área del circulo con radio %.2f es: %.2f\n\n",radio, area);
                             }
                                 break;
                             case 2:{
@@ -84,17 +87,17 @@ public class MenuConsole {
                                 area = base*height;
 
                                 // Print result message
-                                System.out.printf("El área del rectangulo es: %.2f\n", area);
+                                System.out.printf("El área del rectangulo es: %.2f\n\n", area);
                             }
                                 break;
                             
                             case 3:
                                 exitSubOption=true;
-                                System.out.println("----Menú principal----\n");
+                                System.out.println("----Menú principal----\n\n");
                                 break;
                     
                             default:
-                                System.out.println("Opción invalidad.");
+                                System.out.println("Opción invalidad.\n\n");
                                 break;
                         }
                     }while(!exitSubOption);
@@ -102,7 +105,31 @@ public class MenuConsole {
                 }
                     break;
 
-                case 2:
+                case 2:{
+                    // Calculate future age
+                    String dateAge;
+                    String futureDate;
+
+                    // Request birthdate
+                    System.out.print("Ingresa tu fecha de nacimiento (yyyy-MM-dd): ");
+                    input.nextLine(); // Add to clear the buffer
+                    dateAge = input.nextLine();
+
+                    // Convert the entered date to the corresponding date format
+                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd"); // Set the formatting pattern
+                    LocalDate dateAgeLocal = LocalDate.parse(dateAge, formatter); // Convert from String format to LocalDate
+
+                    // Request the future date for age calculation
+                    System.out.print("Ingresa la fecha en la que quieres saber tu edad futura (yyyy-MM-dd): ");
+                    futureDate = input.nextLine();
+                    LocalDate dateFutureAge = LocalDate.parse(futureDate, formatter);
+
+                    // Calculate the difference between birthdate and future date
+                    Period ageFuture = Period.between(dateAgeLocal, dateFutureAge);
+
+                    // Display the future age
+                    System.out.printf("Tu edad en la fecha %s sera de %s años con %s meses y %s dias.\n\n", futureDate, ageFuture.getYears(), ageFuture.getMonths(), ageFuture.getDays());
+                }
                     break;
                     
                 case 3:
