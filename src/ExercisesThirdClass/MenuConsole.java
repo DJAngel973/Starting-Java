@@ -132,7 +132,30 @@ public class MenuConsole {
                 }
                     break;
                     
-                case 3:
+                case 3:{
+                    // Verify if a number is prime
+                    int number;
+                    int divisorCount = 0;
+
+                    // Take input number
+                    System.out.print("Ingresa un número entero: ");
+                    number = input.nextInt();
+                    input.nextLine();
+
+                    // Check how many divisors the number has
+                    for (int i = 1; i <= number; i++){
+                        if (number % i == 0){
+                            divisorCount++;
+                        }
+                    }
+
+                    // If it has only two divisors (1 and itself), it's prime
+                    if (divisorCount == 2){
+                        System.out.printf("El número %d es primo.\n\n", number);
+                    } else {
+                        System.out.printf("El número %d no es primo.\n\n", number);
+                    }
+                }
                     break;
                     
                 case 4:
