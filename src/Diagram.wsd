@@ -1,32 +1,47 @@
-'Example a diagram
+'Example User Registration System - Diagram
+
 @startuml
-
-class Publication {
-    -content: String
-    -datePublication: Date
-    -amountILike: int
-    -comments: List<String>
-
-    +like(): void
-    +comment(commentary: String, user: User): void
-    +remove(): void
-}
-
-class Commentary {
-    -user: User
-    -date: Date
-    -content: String
-
-}
 
 class User {
     -name: String
+    -lastName: String
     -email: String
-    -publicaciones: List<Publication>
+    -phone: int
+    -address: String
+    -age: int
 
-    +addPublication(commentary: Commentary): void
-    +createPublication(content: String): void
-
+    +register(): void
+    +updateProfile(): void
+    +getFullName(): String
 }
+
+class Location {
+    -country: String
+    -city: String
+    -department: String
+
+    +getFullLocation(): String
+}
+
+class Job {
+    -name: String
+    -profession: String
+    -admissionDate: Date
+    -typeContract: String
+
+    +getJobInfo(): String
+}
+
+class Study {
+    -name: String
+    -admissionDate: Date
+    -address: String
+
+    +getStudyInfo(): String
+}
+
+User --> Location : lives in
+User --> "*" Job : has
+User --> "*" Study : studied
 
 @enduml
