@@ -1,4 +1,4 @@
-# Getting Started with Java
+# Module 1 – Java Programming Fundamentals and AI Foundations
 ![Java Logo](https://www.oracle.com/a/tech/img/cb88-java-logo-001.jpg)
 
 This repository contains a series of practical exercises designed to learn the fundamentals of the Java programming language. It's organized by explained steps and exercises provided by [DevSenior](https://devseniorcode.com/) in Module 1 of "Java Senior with AI."
@@ -39,6 +39,7 @@ Each `.java` file represents a standalone activity aimed at reinforcing core Jav
 ## Objective
 
 To practically learn the basic concepts of programming in Java and understand how they can be applied to real-world problems.
+This module serves as the foundation for advanced backend development and AI-enhanced Java practices.
 
 ## How to Use This Repository
 
@@ -46,7 +47,7 @@ You can clone it to interact with the exercises via the console or a user interf
 
 ## Status
 
-This project is updated weekly. progressing step by step.
+✔️ Module 1 completed. Exercises are organized by class sessions.
 
 ## About Me
 
